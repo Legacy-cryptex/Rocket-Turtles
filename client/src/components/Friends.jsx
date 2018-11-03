@@ -26,7 +26,7 @@ const Friends = props => {
   return (
     <div>
       <div>
-        <select onChange={e => props.handleFriendToAddChange(e)}>
+        <select onChange={e => props.handleFriendToAddChange(e, nonFriends)}>
           <option>Select</option>
           {nonFriends.map((user, i) => {
             return (

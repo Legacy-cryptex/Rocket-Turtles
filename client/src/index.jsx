@@ -68,11 +68,10 @@ class App extends React.Component {
     this.handleAddFriend = this.handleAddFriend.bind(this);
   }
 
-  handleFriendToAddChange(event) {
+  handleFriendToAddChange(event, nonFriends) {
     //change which friend we are gonna add
-    this.state.friendToAdd = this.state.users[
-      event.currentTarget.selectedIndex - 1
-    ];
+    this.state.friendToAdd = nonFriends[event.currentTarget.selectedIndex - 1];
+    debugger;
   }
 
   handleAddFriend() {
