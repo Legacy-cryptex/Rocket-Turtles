@@ -36,7 +36,7 @@ export default class Sidebar extends Component {
     };
 
     return (
-      <div>
+      <div className="sidebox1">
         <UserProfile
           user={this.props.user}
           globalTimeOfDay={this.props.globalTimeOfDay}

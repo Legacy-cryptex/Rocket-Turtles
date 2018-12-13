@@ -137,3 +137,4 @@ d) friends tab / leaderboards --pending on scoring system implementation
 
 3. improve sleep tracking- when you go to bed vs wake up (stay consistent)
    //twitter bot? reminders to go to bed
+   doo dee do

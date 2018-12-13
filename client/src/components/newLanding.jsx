@@ -84,3 +84,5 @@ const Landing = () => {
 };
 export default Landing;
 //rgb(46, 17, 45)
+
+//0.726

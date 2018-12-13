@@ -66,6 +66,7 @@ class App extends React.Component {
     );
     this.handleFriendToAddChange = this.handleFriendToAddChange.bind(this);
     this.handleAddFriend = this.handleAddFriend.bind(this);
+    this.updateBlob = this.updateBlob.bind(this);
   }
 
   handleFriendToAddChange(event) {
@@ -311,6 +312,11 @@ class App extends React.Component {
       wakeTime: date.toDate()
     });
   }
+  updateBlob(val) {
+    this.setState({
+      condition: val
+    });
+  }
 
   //posts new sleep entry
   postSleepEntry() {
@@ -370,6 +376,7 @@ class App extends React.Component {
                 globalTimeOfDay={this.state.globalTimeOfDay}
                 weeklyAverage={this.state.weeklyAverage}
                 totalCalories={this.state.totalCalories}
+                cb={this.updateBlob}
               />
             </div>
           )}

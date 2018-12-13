@@ -133,6 +133,10 @@ class Blob extends React.Component {
     ) {
       this.setBlobStates();
       this.setCalorieState();
+      console.log(`blob${this.state.calories}${this.state.sleep}`, "here");
+      setTimeout(() => {
+        this.props.cb(`${this.state.calories}${this.state.sleep}`);
+      }, 3000);
     }
   }
 

@@ -9,7 +9,7 @@ export default class BlobWindow extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="componentbox1">
         <Background globalTimeOfDay={this.props.globalTimeOfDay} />
         <Blob
           user={this.props.user}
@@ -17,6 +17,7 @@ export default class BlobWindow extends React.Component {
           weeklyAverage={this.props.weeklyAverage}
           totalCalories={this.props.totalCalories}
           globalTimeOfDay={this.props.globalTimeOfDay}
+          cb={this.props.cb}
         />
       </div>
     );
